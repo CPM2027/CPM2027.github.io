@@ -10,31 +10,366 @@
         body {
             margin: 0;
             padding: 0;
-            background: white;
-            color: #222;
-            font-family: Georgia, "Times New Roman", serif;
-            font-size: 16px;
+            background: #ffffff;
+            color: #000000;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
             line-height: 1.5;
         }
 
+        /* Main page */
         .page {
-    width: 1100px;
-    max-width: calc(100% - 40px);
-    margin: 40px auto;
-    padding: 35px 45px 60px 45px;
-    background: #d9edf7;
-    min-height: 900px;
+            width: 1000px;
+            max-width: calc(100% - 40px);
+            margin: 30px auto 60px auto;
         }
 
-        header {
-            padding-top: 30px;
-            padding-bottom: 20px;
+        /* Header */
+        .header {
+            margin-bottom: 25px;
         }
 
-        header a {
-            color: inherit;
+        .header a {
+            color: #000000;
             text-decoration: none;
         }
+
+        .title {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+        }
+
+        /* Two-column layout */
+        .layout {
+            display: grid;
+            grid-template-columns: 210px 1fr;
+            gap: 45px;
+        }
+
+        /* Navigation */
+        .navigation {
+            font-size: 14px;
+        }
+
+        .navigation h4 {
+            font-size: 14px;
+            margin: 0 0 8px 0;
+        }
+
+        .navigation a {
+            display: block;
+            color: #0000ee;
+            text-decoration: underline;
+            margin: 3px 0;
+        }
+
+        .navigation a:visited {
+            color: #0000ee;
+        }
+
+        .navigation a:hover {
+            color: #551a8b;
+        }
+
+        .navigation hr {
+            border: 0;
+            border-top: 1px solid #999;
+            margin: 18px 0;
+        }
+
+        /* Main content */
+        .content h1 {
+            font-size: 28px;
+            margin: 0 0 22px 0;
+        }
+
+        .content h2 {
+            font-size: 20px;
+            margin: 28px 0 10px 0;
+        }
+
+        .content p {
+            margin: 0 0 16px 0;
+        }
+
+        .content a {
+            color: #0000ee;
+        }
+
+        .content a:visited {
+            color: #0000ee;
+        }
+
+        .content ul {
+            padding-left: 25px;
+            margin-top: 0;
+        }
+
+        .content li {
+            margin-bottom: 4px;
+        }
+
+        /* Sponsors */
+        .sponsors {
+            margin-top: 10px;
+        }
+
+        .sponsor {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 12px 0;
+        }
+
+        .sponsor img {
+            max-width: 180px;
+            max-height: 80px;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+
+            .page {
+                max-width: calc(100% - 25px);
+                margin-top: 20px;
+            }
+
+            .layout {
+                display: block;
+            }
+
+            .navigation {
+                margin-bottom: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <!-- HEADER -->
+    <div class="header">
+
+        <a href="index.html">
+
+            <div class="title">
+                CPM 2027
+            </div>
+
+            <div class="subtitle">
+                38<sup>th</sup> Annual Symposium on Combinatorial Pattern Matching
+                <br>
+                Copenhagen, Denmark, June 2027
+            </div>
+
+        </a>
+
+    </div>
+
+
+    <div class="layout">
+
+        <!-- ========================= -->
+        <!-- LEFT NAVIGATION -->
+        <!-- ========================= -->
+
+        <div class="navigation">
+
+            <h4>Conference</h4>
+
+            <a href="index.html">Home</a>
+            <a href="keynotes.html">Keynote Speakers</a>
+            <a href="highlights.html">Highlights of CPM</a>
+            <a href="programme.html">Programme</a>
+            <a href="committees.html">Committees</a>
+            <a href="papers.html">Call for papers</a>
+            <a href="registration.html">Registration</a>
+            <a href="social.html">Social Events</a>
+            <a href="awards.html">Awards</a>
+            <a href="information.html">Conference information</a>
+
+
+            <hr>
+
+
+            <h4>Papers and proceedings</h4>
+
+            <a href="accepted.html">Accepted Papers</a>
+            <a href="proceedings.html">Proceedings</a>
+
+
+            <hr>
+
+
+            <h4>Local information</h4>
+
+            <a href="venue.html">Venue</a>
+            <a href="arrival.html">Arrival and Accommodation</a>
+            <a href="practicalities.html">Practicalities</a>
+
+
+            <hr>
+
+
+            <h4>Other</h4>
+
+            <a href="summer-school.html">Summer school</a>
+            <a href="archive.html">CPM Archive</a>
+            <a href="code-of-conduct.html">Code of Conduct</a>
+            <a href="credits.html">Credits</a>
+
+
+            <hr>
+
+
+            <h4>Poster</h4>
+
+            <a href="#">To be updated...</a>
+
+        </div>
+
+
+        <!-- ========================= -->
+        <!-- MAIN CONTENT -->
+        <!-- ========================= -->
+
+        <div class="content">
+
+            <h1>Home</h1>
+
+
+            <p>
+                Welcome to the website of the
+                <strong>38<sup>th</sup> Annual Symposium on
+                Combinatorial Pattern Matching (CPM 2027).</strong>
+                The event will be held in Copenhagen, Denmark.
+            </p>
+
+
+            <p>
+                See you in Copenhagen!
+            </p>
+
+
+            <h2>Important dates</h2>
+
+            <ul>
+
+                <li>
+                    First submission round deadline:
+                    To be announced
+                </li>
+
+                <li>
+                    Author notification:
+                    To be announced
+                </li>
+
+                <li>
+                    Second submission round deadline:
+                    To be announced
+                </li>
+
+                <li>
+                    Author notification:
+                    To be announced
+                </li>
+
+                <li>
+                    Early registration:
+                    To be announced
+                </li>
+
+                <li>
+                    Deadline for early registration:
+                    To be announced
+                </li>
+
+                <li>
+                    Conference:
+                    To be announced
+                </li>
+
+            </ul>
+
+
+            <h2>Proceedings</h2>
+
+            <p>
+                Proceedings will be published in LIPIcs.
+            </p>
+
+            <p>
+                For more information, see
+                <a href="#">
+                    here
+                </a>.
+            </p>
+
+
+            <h2>Close (and related) events</h2>
+
+            <ul>
+
+                <li>
+                    <a href="summer-school.html">
+                        Summer School
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Related conference
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <h2>Sponsors</h2>
+
+            <div class="sponsors">
+
+                <div class="sponsor">
+
+                    <div>
+                        Sponsor information
+                    </div>
+
+                </div>
+
+                <div class="sponsor">
+
+                    <div>
+                        Sponsor information
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <h2>Contact</h2>
+
+            <p>
+                Contact the CPM 2027 organisers.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>        }
 
         .site-title {
             font-size: 30px;
